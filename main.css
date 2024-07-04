@@ -9,18 +9,22 @@ body {
     position: relative;
     width: 100%;
     height: 100vh;
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 40px;
     place-items: center;
     background-color: #312d2d;
 }
 
 #timer {
     position: relative;
-    font-size: 12vw;
+    font-size: 70px;
     color: #b58565;
     box-shadow: 5px 5px 5px 5px rgb(227, 154, 154);
     border-radius: 10px;
-    animation: uz 2s linear 2s infinite alternate
+    animation: uz 2s linear 2s infinite alternate;
 }
 
 .box {
@@ -32,7 +36,7 @@ body {
     background-color: transparent;
     border: 1px solid #b58565;
     padding: 10px 20px;
-    font-size: 2vw;
+    font-size: 14px;
     color: sienna;
     border-radius: 30px;
 }
@@ -46,9 +50,14 @@ body {
 @media only screen and (min-width: 550px) {
     .btn {
         padding: 20px 40px;
+        font-size: 2vw;
     }
     .box {
         column-gap: 20px;
+    }
+
+    #timer {
+        font-size: 12vw;
     }
 }
 
